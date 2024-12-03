@@ -1,0 +1,31 @@
+<div class="goals-container">
+    <h1>Mis Objetivos de Salud</h1>
+    <p>Añade tus metas personales relacionadas con la salud:</p>
+  
+    <!-- Lista de objetivos -->
+    <div class="goals-list">
+      <h2>Objetivos Actuales</h2>
+      <ul>
+        <li *ngFor="let goal of goals" class="goal-item">
+          {{ goal }}
+          <button (click)="removeGoal(goal)" class="remove-btn">Eliminar</button>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Formulario para añadir objetivos -->
+    <form (ngSubmit)="addGoal()">
+      <input
+        type="text"
+        [(ngModel)]="newPersonalGoal"
+        placeholder="Nuevo objetivo"
+        required
+        name="goal"
+      />
+      <button type="submit" class="btn-submit">Añadir</button>
+    </form>
+  
+    <!-- Botón para volver -->
+    <button routerLink="/dashboard" class="btn-back">Volver</button>
+  </div>
+  

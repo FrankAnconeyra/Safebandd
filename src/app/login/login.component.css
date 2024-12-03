@@ -1,0 +1,82 @@
+/* Fondo de la página */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #FFDAB9, #FFB6C1); /* Degradado anaranjado-rosa */
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo del logo */
+.login-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Estilo del título */
+.login-title {
+  font-family: 'Cursive', sans-serif;
+  font-size: 2.5rem;
+  color: #FF4500; /* Naranja oscuro */
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+label {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+input {
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #FF4500;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #FF4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #FF6347; /* Tonalidad más clara */
+  box-shadow: 0 4px 8px rgba(255, 99, 71, 0.5);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
